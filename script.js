@@ -25,7 +25,6 @@ function display(id) {
         type: "GET",
         url: 'https://jsonplaceholder.typicode.com/todos/'+ id +'',
         dataType: 'json',
-        datasrc: '',
         success: function (obj) {
             document.getElementById("d").innerText = "Details for the selected row are below...";
             document.getElementById("uId").innerText = "UserId: " + obj.userId + "";
